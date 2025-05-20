@@ -17,6 +17,7 @@ struct Hydrus: Driver
     std::map<std::string, double> ret_val{};
 
     add_to_map(ret_val, "total_water_m3", this->get_0C13(telegram));
+    add_to_map(ret_val, "total_water_m3", this->get_0C14(telegram));
 
     if (ret_val.size() > 0) {
       return ret_val;
