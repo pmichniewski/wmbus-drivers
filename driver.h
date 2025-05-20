@@ -483,7 +483,7 @@ struct Driver
       esphome::optional<double> ret_val{};
       uint32_t usage = 0;
       size_t i = 11;
-      uint32_t total_register = 0x0C13;
+      uint32_t total_register = 0x0C14;
       while (i < telegram.size()) {
         uint32_t c = (((uint32_t)telegram[i+0] << 8) | ((uint32_t)telegram[i+1]));
         if (c == total_register) {
